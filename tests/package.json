@@ -1,0 +1,10 @@
+{
+  "name": "dejaurl-tests",
+  "version": "1.0.0",
+  "scripts": { "test": "jest --verbose --coverage" },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": ["*.js", "!jest.config.js"]
+  },
+  "devDependencies": { "jest": "^29.0.0" }
+}

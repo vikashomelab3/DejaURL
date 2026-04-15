@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <radialGradient id="bgC" cx="42%" cy="36%" r="68%">
+      <stop offset="0%"   stop-color="#3d0606"/>
+      <stop offset="100%" stop-color="#0e0101"/>
+    </radialGradient>
+    <radialGradient id="glassLens" cx="38%" cy="32%" r="65%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.28)"/>
+      <stop offset="55%"  stop-color="rgba(255,255,255,0.10)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- squircle bg -->
+  <rect x="0" y="0" width="240" height="240" rx="66" fill="url(#bgC)"/>
+  <rect x="0" y="0" width="240" height="240" rx="66" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="3"/>
+
+  <!-- 3 OUTER HALO ARCS at r=110 -->
+  <path d="M177 17 A110 110 0 0 1 220 159" fill="none" stroke="#f2c94c" stroke-width="11" stroke-linecap="round"/>
+  <path d="M174 207 A110 110 0 0 1 20 75"  fill="none" stroke="#d4a017" stroke-width="9"  stroke-linecap="round" opacity="0.70"/>
+  <path d="M14 155  A110 110 0 0 1 63 17"  fill="none" stroke="#b8860b" stroke-width="7"  stroke-linecap="round" opacity="0.30"/>
+
+  <!-- 3 anchor dots -->
+  <circle cx="177" cy="17"  r="8"   fill="#f2c94c"/>
+  <circle cx="174" cy="207" r="8"   fill="#d4a017" opacity="0.70"/>
+  <circle cx="63"  cy="17"  r="5.5" fill="#b8860b" opacity="0.45"/>
+
+  <!-- MAGNIFIER RING -->
+  <circle cx="110" cy="116" r="72" fill="none" stroke="white" stroke-width="11"/>
+
+  <!-- GLASS CIRCLE — light fill inside lens -->
+  <circle cx="110" cy="116" r="61" fill="url(#glassLens)"/>
+
+  <!-- lens highlight arc — top-left shine -->
+  <path d="M74 82 A44 44 0 0 1 118 68" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- clock tick marks -->
+  <line x1="110" y1="47"  x2="110" y2="59"  stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.70"/>
+  <line x1="110" y1="173" x2="110" y2="185" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.70"/>
+  <line x1="41"  y1="116" x2="53"  y2="116" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.70"/>
+  <line x1="167" y1="116" x2="179" y2="116" stroke="white" stroke-width="3.5" stroke-linecap="round" opacity="0.70"/>
+  <!-- diagonal ticks -->
+  <line x1="61"  y1="67"  x2="69"  y2="75"  stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.38"/>
+  <line x1="151" y1="67"  x2="159" y2="75"  stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.38"/>
+  <line x1="61"  y1="165" x2="69"  y2="157" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.38"/>
+  <line x1="151" y1="165" x2="159" y2="157" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.38"/>
+
+  <!-- hour hand ~11 -->
+  <line x1="110" y1="116" x2="93"  y2="74"  stroke="white"   stroke-width="7.5" stroke-linecap="round"/>
+  <!-- minute hand → 3 o'clock (lucky number) -->
+  <line x1="110" y1="116" x2="178" y2="116" stroke="#f2c94c" stroke-width="6"   stroke-linecap="round"/>
+  <!-- faint second hand -->
+  <line x1="110" y1="116" x2="94"  y2="162" stroke="rgba(255,255,255,0.28)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- center hub -->
+  <circle cx="110" cy="116" r="12" fill="white"/>
+  <circle cx="110" cy="116" r="6"  fill="#c8860a"/>
+
+  <!-- HANDLE -->
+  <line x1="173" y1="179" x2="224" y2="230" stroke="#d4a017" stroke-width="21" stroke-linecap="round"/>
+  <line x1="173" y1="179" x2="224" y2="230" stroke="rgba(255,255,255,0.18)" stroke-width="8"  stroke-linecap="round"/>
+</svg>
