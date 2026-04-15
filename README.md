@@ -71,4 +71,3 @@ npm test
 ## 🔒 Privacy
 
 All data stored **100% locally** in Chrome storage. Nothing leaves your device.
-# DejaURL
